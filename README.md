@@ -15,6 +15,8 @@ We're using:
 
 Angular to create the app with [NG CLI](https://angular.io/cli).
 
+Platzi Fake API to get random products. [API](https://fakeapi.platzi.com/en/rest/products)
+
 Conventional commits to create a commit message. [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
 Git Flow to create a branch strategy. [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/).
