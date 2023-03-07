@@ -29,6 +29,7 @@ A list of technologies used within the project:
 
 - [Node JS](https://nodejs.org/en/): Version 18.10.0
 - [Angular CLI](https://angular.io/cli): Version 15.1.6
+- [IcoMoon](https://icomoon.io/) To create a font with icons
 
 
 ## Execution
