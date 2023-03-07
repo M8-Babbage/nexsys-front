@@ -11,15 +11,23 @@ export class ProductsComponent implements OnInit {
   // ------- PROPERTIES -------
   public products: Product[] = [];
 
+  offset: number = 0;
+
   constructor(private platzi: PlatziStoreService) { }
 
   ngOnInit() {
-    this.getAllProducts();
+    this.getAllProducts(this.offset);
   }
 
   // ------- METHODS -------
-  public getAllProducts(): void {
-    this.platzi.getProducts().subscribe((products) => {
+  public getAllProducts(offset: number): void {
+    this.offset += offset;
+    if (this.offset < 0) {
+      this.offset = 0;
+    }
+
+    this.platzi.getProducts(this.offset).subscribe((products) => {
+      console.log(this.offset);
       console.log(products);
       this.products = products;
     });

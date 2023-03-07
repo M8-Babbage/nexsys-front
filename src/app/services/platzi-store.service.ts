@@ -8,20 +8,23 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PlatziStoreService {
-
-  public URL: string = 'https://api.escuelajs.co/api/v1';
+  private URL: string = 'https://api.escuelajs.co/api/v1';
 
   constructor(private http: HttpClient) { }
 
-  getProducts(): Observable<Product[]> {
+  getProducts(offset: number): Observable<Product[]> {
     const params = new HttpParams({
       fromObject: {
-        limit: '10',
-        offset: '0',
+        limit: 9,
+        offset: offset,
       }
     });
 
     return this.http.get<Product[]>(`${this.URL}/products`, { params });
+  }
+
+  getProductById(id: number): Observable<Product> {
+    return this.http.get<Product>(`${this.URL}/products/${id}`);
   }
 
 }

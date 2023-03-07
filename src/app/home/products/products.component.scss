@@ -1,0 +1,10 @@
+.description {
+  display: block;
+  min-height: 40px;
+  max-height: 130px;
+  overflow: scroll;
+}
+
+.description::-webkit-scrollbar {
+  display: none;
+}
