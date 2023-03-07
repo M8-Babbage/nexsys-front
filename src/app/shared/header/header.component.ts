@@ -9,8 +9,6 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
-  items: any[] = [];
-
   ngOnInit() {}
 
 }
