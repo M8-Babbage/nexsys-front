@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./error-page.component.scss']
 })
 export class ErrorPageComponent implements OnInit {
+  msgs1: any = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-  }
+    this.msgs1 = [
+      { severity: 'error', summary: '404', detail: 'Route not found' },
+    ];
 
+  }
 }
