@@ -1,21 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DetailsComponent } from './home/details/details.component';
+import { ProductsComponent } from './home/products/products.component';
 import { ErrorPageComponent } from './shared/components/error-page/error-page.component';
 
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+    path: '',
+    component: ProductsComponent,
+    pathMatch: 'full',
   },
   {
-    path: '404',
-    component: ErrorPageComponent,
+    path: 'product/:id',
+    component: DetailsComponent,
   },
   {
     path: '**',
-    // component: ErrorPageComponent
-    redirectTo: '404',
+    component: ErrorPageComponent
   },
 ];
 

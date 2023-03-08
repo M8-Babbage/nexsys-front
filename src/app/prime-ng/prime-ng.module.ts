@@ -4,8 +4,8 @@ import { MenubarModule } from 'primeng/menubar';
 import { SplitterModule } from 'primeng/splitter';
 import { MessagesModule } from 'primeng/messages';
 import { MessageModule } from 'primeng/message';
-import {ProgressSpinnerModule} from 'primeng/progressspinner';
-
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   exports: [
@@ -15,6 +15,9 @@ import {ProgressSpinnerModule} from 'primeng/progressspinner';
     MessagesModule,
     MessageModule,
     ProgressSpinnerModule
+  ],
+  imports: [
+    RouterModule,
   ]
 })
 export class PrimeNgModule { }

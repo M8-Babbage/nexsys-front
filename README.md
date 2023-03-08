@@ -12,10 +12,7 @@
 
 You can test the app here [https://lovely-empanada-6f70a8.netlify.app/home/products](https://lovely-empanada-6f70a8.netlify.app/home/products)
 
-The application has 404 validations, if the url does not exist, it redirects to the main component
-
-I'm using Lazy Loading in routes
-
+The application has 404 validations, if the url does not exist, it redirects to the main component.
 
 ## Information
 

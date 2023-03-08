@@ -73,7 +73,7 @@ export class DetailsComponent implements OnInit {
       allowOutsideClick: false,
     }).then((result) => {
       if (result.isConfirmed) {
-        this.router.navigate(['/home']);
+        this.router.navigate(['/']);
       }
     });
   }

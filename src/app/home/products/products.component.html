@@ -20,7 +20,7 @@
         <span class="font-bold text-lg">{{product.title}}</span>
         <span class="description font-light text-lg">{{product.description}}</span>
         <span class="font-bold text-primary text-xl">${{product.price}}</span>
-        <p-button [routerLink]="[product.id]" label="VIEW DETAIL"></p-button>
+        <p-button [routerLink]="['product', product.id]" label="VIEW DETAIL"></p-button>
       </div>
     </div>
   </div>
