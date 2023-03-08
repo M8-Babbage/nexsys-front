@@ -14,7 +14,7 @@
       <span class="text-4xl animate__animated animate__backInDown">{{product.title}}</span>
       <span class="font-bold text-red-600 text-xl mt-3 animate__animated animate__backInLeft">${{product.price}}</span>
       <span class="description font-light text-lg mt-3 animate__animated animate__backInRight">{{product.description}}</span>
-      <p-button class="button-car mt-3 animate__animated animate__backInUp" [routerLink]="[product.id]" label="ADD TO CART"></p-button>
+      <p-button (onClick)="launchSwal($event)" class="button-car mt-3 animate__animated animate__backInUp" label="ADD TO CART"></p-button>
     </div>
   </section>
   <div class="grid w-12 xl:w-8 m-0 p-0 m-auto justify-content-center md:justify-content-start">

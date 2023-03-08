@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { switchMap } from 'rxjs';
 import { Product } from 'src/app/models/platzi.interface';
 import { PlatziStoreService } from 'src/app/services/platzi-store.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-details',
@@ -61,5 +62,19 @@ export class DetailsComponent implements OnInit {
   public changeSelectedImage(index: number): void {
     this.index = index;
     this.currentImage = this.product.images[this.index];
+  }
+
+  launchSwal(event: any) {
+    Swal.fire({
+      icon: 'success',
+      title: 'Item added to cart!',
+      html: `You can continue shopping <br>
+      This is just a demo with sweetalert2 :)`,
+      allowOutsideClick: false,
+    }).then((result) => {
+      if (result.isConfirmed) {
+        this.router.navigate(['/home']);
+      }
+    });
   }
 }
