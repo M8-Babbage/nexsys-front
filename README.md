@@ -10,7 +10,7 @@
 
 ## Usage
 
-You can test the app here [https://lovely-empanada-6f70a8.netlify.app/home/products](https://lovely-empanada-6f70a8.netlify.app/home/products)
+You can test the app here [https://courageous-kitten-5a0fcd.netlify.app/](https://courageous-kitten-5a0fcd.netlify.app/)
 
 The application has 404 validations, if the url does not exist, it redirects to the main component.
 
