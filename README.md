@@ -1,27 +1,46 @@
-# Nexsys
+# Nexys
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+## Table of Contents
 
-## Development server
+1. [Information](#information)
+2. [Technologies](#technologies)
+3. [Execution](#execution)
+4. [Collaboration](#collaboration)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Information
 
-## Code scaffolding
+This is a project created with Angular CLI.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+We're using:
 
-## Build
+Angular to create the app with [NG CLI](https://angular.io/cli).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Platzi Fake API to get random products. [API](https://fakeapi.platzi.com/en/rest/products)
 
-## Running unit tests
+Conventional commits to create a commit message. [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Git Flow to create a branch strategy. [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/).
 
-## Running end-to-end tests
+Semver to create our versioning. [Semver](https://semver.org/).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Technologies
 
-## Further help
+A list of technologies used within the project:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [Node JS](https://nodejs.org/en/): Version 18.10.0
+- [Angular CLI](https://angular.io/cli): Version 15.1.6
+- [IcoMoon](https://icomoon.io/) To create a font with icons
+
+
+## Execution
+
+A little intro about the installation.
+
+1. Clone the repository: `git clone https://github.com/M8-Babbage/nexsys-front nexsys`
+2. Go to the folder: `cd nexsys`
+3. Install dependencies: `pnpm install`.
+4. Run dev mode: `ng run serve -o`
+
+## Collaboration
+
+> Just create a pull request if you want.
