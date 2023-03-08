@@ -10,8 +10,8 @@ import { PlatziStoreService } from 'src/app/services/platzi-store.service';
 export class ProductsComponent implements OnInit {
   // ------- PROPERTIES -------
   public products: Product[] = [];
-
-  offset: number = 0;
+  public spinner: boolean = true;
+  public offset: number = 0;
 
   constructor(private platzi: PlatziStoreService) { }
 
@@ -21,15 +21,15 @@ export class ProductsComponent implements OnInit {
 
   // ------- METHODS -------
   public getAllProducts(offset: number): void {
+    this.spinner = true;
     this.offset += offset;
     if (this.offset < 0) {
       this.offset = 0;
     }
 
     this.platzi.getProducts(this.offset).subscribe((products) => {
-      console.log(this.offset);
-      console.log(products);
       this.products = products;
+      this.spinner = false;
     });
   }
 

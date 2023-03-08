@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-error-page',
@@ -8,12 +9,16 @@ import { Component, OnInit } from '@angular/core';
 export class ErrorPageComponent implements OnInit {
   msgs1: any = [];
 
-  constructor() {}
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.msgs1 = [
       { severity: 'error', summary: '404', detail: 'Route not found' },
     ];
 
+    setTimeout(() => {
+      this.router.navigate(['/home/products']);
+    }, 3000);  //5s
   }
+
 }

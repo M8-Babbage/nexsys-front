@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?asptge');
-  src:  url('fonts/icomoon.eot?asptge#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?asptge') format('truetype'),
-    url('fonts/icomoon.woff?asptge') format('woff'),
-    url('fonts/icomoon.svg?asptge#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?xc6tsy');
+  src:  url('fonts/icomoon.eot?xc6tsy#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?xc6tsy') format('truetype'),
+    url('fonts/icomoon.woff?xc6tsy') format('woff'),
+    url('fonts/icomoon.svg?xc6tsy#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,18 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-logo-facebook:before {
+.icon-arrow:before {
   content: "\e900";
 }
-.icon-logo-instagram:before {
+.icon-logo-facebook:before {
   content: "\e901";
 }
-.icon-logo-linkedin:before {
+.icon-logo-instagram:before {
   content: "\e902";
 }
-.icon-logo-twitter:before {
+.icon-logo-linkedin:before {
   content: "\e903";
 }
-.icon-logo-youtube:before {
+.icon-logo-twitter:before {
   content: "\e904";
+}
+.icon-logo-youtube:before {
+  content: "\e905";
 }

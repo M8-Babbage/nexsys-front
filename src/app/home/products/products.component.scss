@@ -1,10 +1,10 @@
-.description {
-  display: block;
-  min-height: 40px;
-  max-height: 130px;
-  overflow: scroll;
+.spinner-container {
+  width: 100vw;
+  height: 100vh;
 }
 
-.description::-webkit-scrollbar {
-  display: none;
+:host ::ng-deep .p-button {
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
 }
