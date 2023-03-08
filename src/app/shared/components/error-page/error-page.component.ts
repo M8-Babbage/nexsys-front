@@ -17,7 +17,7 @@ export class ErrorPageComponent implements OnInit {
     ];
 
     setTimeout(() => {
-      this.router.navigate(['/home/products']);
+      this.router.navigate(['']);
     }, 3000);  //5s
   }
 
